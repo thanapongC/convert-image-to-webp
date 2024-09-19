@@ -30,5 +30,5 @@ def convert_all_images_to_webp(input_folder, quality=80):
 
 
 # Example usage
-input_folder = "/Volumes/data/skinsolution"  # Replace with your input folder path
+input_folder = "your root folder path"  # Replace with your input folder path
 convert_all_images_to_webp(input_folder)
