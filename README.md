@@ -1,6 +1,6 @@
 # Convert Image Other Type To WEBp
 
-I'm Lazyyyy
+Support JPEG and PNG only
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ Make sure you have Python 3.x installed on your machine. You can verify this by 
 python --version
 
 ### Summary of Steps:
-1. **Clone the repository** or download the script.
+1. **Clone the repository** or download the script to your root folder.
 2. **Set up a virtual environment** (optional).
 3. **Install dependencies** with `pip install Pillow`.
 4. **Configure the script** by modifying the path to your WordPress uploads folder.
