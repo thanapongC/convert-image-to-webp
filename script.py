@@ -1,7 +1,7 @@
 from PIL import Image, UnidentifiedImageError
 import os
 
-def convert_all_images_to_webp(input_folder, quality=80):
+def convert_and_delete_images_to_webp(input_folder, quality=80):
     # Walk through all directories and subdirectories
     for root, dirs, files in os.walk(input_folder):
         # Check if any .png or .jpeg/.jpg files exist in the current folder
@@ -23,6 +23,11 @@ def convert_all_images_to_webp(input_folder, quality=80):
                         # Convert to WebP format
                         img.save(output_path, 'webp', quality=quality)
                         print(f"Converted {input_path} to {output_path}")
+                    
+                    # Remove the original file after conversion
+                    os.remove(input_path)
+                    print(f"Deleted original file: {input_path}")
+                
                 except UnidentifiedImageError:
                     print(f"Could not identify image file: {input_path}")
                 except Exception as e:
@@ -30,5 +35,5 @@ def convert_all_images_to_webp(input_folder, quality=80):
 
 
 # Example usage
-input_folder = "your root folder path"  # Replace with your input folder path
-convert_all_images_to_webp(input_folder)
+input_folder = "yout path"  # Replace with your input folder path
+convert_and_delete_images_to_webp(input_folder)
