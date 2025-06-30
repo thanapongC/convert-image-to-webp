@@ -35,5 +35,5 @@ def convert_and_delete_images_to_webp(input_folder, quality=80):
 
 
 # Example usage
-input_folder = "yout path"  # Replace with your input folder path
+input_folder = "/Volumes/data/skinsolution"  # Replace with your input folder path
 convert_and_delete_images_to_webp(input_folder)
